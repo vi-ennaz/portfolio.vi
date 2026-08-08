@@ -145,7 +145,7 @@ function animateCounter(element) {
 
   let current = 0;
   const duration = 1200;
-  const stepTime = Math.max(Math.floor(duration / target), 20);
+  const stepTime = Math.max(Math.floor(duration/target), 20);
 
   const interval = setInterval(() => {
     current++;
