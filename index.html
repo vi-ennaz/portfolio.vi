@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Vienna Dinh - Cybersecurity student, software developer and technology enthusiast.">
+  <meta name="author" content="Vienna Dinh">
+
+  <title>Vienna Dinh | Cybersecurity</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="bg-fx">
+    <div class="bg-grid"></div>
+    <div class="bg-glow bg-glow--one"></div>
+    <div class="bg-glow bg-glow--two"></div>
+    <canvas id="particles"></canvas>
+  </div>
+
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+
+      <a href="#home" class="nav__logo">
+        <span class="nav__logo-bracket">&lt;</span>Vienna<span class="nav__logo-bracket">/&gt;</span>
+      </a>
+
+      <nav class="nav__links" id="navLinks">
+        <a href="#about" class="nav__link">About</a>
+        <a href="#skills" class="nav__link">Skills</a>
+        <a href="#projects" class="nav__link">Projects</a>
+        <a href="#experience" class="nav__link">Experience</a>
+        <a href="#certifications" class="nav__link">Certifications</a>
+        <a href="#writeups" class="nav__link">Write-ups</a>
+        <a href="#contact" class="nav__link">Contact</a>
+      </nav>
+
+      <div class="nav__actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark and light mode">
+
+          <svg class="icon icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+
+          <svg class="icon icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3A7 7 0 0 0 21 12.79z"></path>
+          </svg>
+
+        </button>
+
+        <button class="nav__burger" id="navBurger" aria-label="Open menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero" id="home">
+
+      <div class="hero__content">
+
+        <div class="hero__eyebrow">
+          <span class="dot-blink"></span>
+          Melbourne, Australia
+        </div>
+
+        <h1 class="hero__title">
+          Hi, I'm <span class="gradient-text">Vienna Dinh</span>
+        </h1>
+
+        <h2 class="hero__typing-line">
+          <span id="typingText"></span><span class="cursor">|</span>
+        </h2>
+
+        <p class="hero__desc">
+          I'm a cybersecurity student and software developer passionate about
+          technology, security and building things that actually make an impact.
+          I enjoy learning how systems work, creating software and exploring
+          cybersecurity through hands-on projects.
+        </p>
+
+        <div class="hero__buttons">
+          <a href="#projects" class="btn btn--primary">View Projects</a>
+          <a href="#contact" class="btn btn--secondary">Let's Connect</a>
+          <a href="#about" class="btn btn--ghost">About Me</a>
+        </div>
+
+        <div class="hero__stats">
+
+          <div class="hero__stat">
+            <span class="hero__stat-num" data-count="20">0</span>
+            <span class="hero__stat-label">Projects & Builds</span>
+          </div>
+
+          <div class="hero__stat">
+            <span class="hero__stat-num" data-count="3">0</span>
+            <span class="hero__stat-label">Core Areas</span>
+          </div>
+
+          <div class="hero__stat">
+            <span class="hero__stat-num" data-count="8">0</span>
+            <span class="hero__stat-label">Years Piano</span>
+          </div>
+
+        </div>
+
+      </div>
+
+      <a href="#about" class="scroll-cue" aria-label="Scroll down">
+        <span></span>
+      </a>
+
+    </section>
+
+    <section class="section" id="about">
+
+      <div class="section__header">
+        <span class="section__eyebrow">01 / ABOUT</span>
+        <h2 class="section__title">A little about me</h2>
+      </div>
+
+      <div class="about__grid">
+
+        <div class="about__visual reveal">
+          <div class="about__initials">
+            <span>V</span>
+          </div>
+
+          <div class="about__visual-ring"></div>
+        </div>
+
+        <div class="about__text reveal">
+
+          <p>
+            I'm Vienna, a student from Melbourne with a strong interest in
+            cybersecurity, software development and technology. I'm currently
+            completing Year 12 and building my skills through school projects,
+            personal projects and independent learning.
+          </p>
+
+          <p>
+            I'm particularly interested in cybersecurity because I want to
+            understand how technology can be attacked, protected and improved.
+            I'm also interested in cloud security, penetration testing and
+            building secure software.
+          </p>
+
+          <p>
+            Outside of technology, I enjoy fashion, content creation, ice
+            skating, dancing, music and spending time with friends. I'm always
+            looking for new things to learn and new projects to build.
+          </p>
+
+          <div class="about__interests">
+            <span class="chip">Cybersecurity</span>
+            <span class="chip">Software Development</span>
+            <span class="chip">Cloud Security</span>
+            <span class="chip">Technology</span>
+            <span class="chip">Problem Solving</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="section section--alt" id="skills">
+
+      <div class="section__header">
+        <span class="section__eyebrow">02 / SKILLS</span>
+        <h2 class="section__title">What I work with</h2>
+      </div>
+
+      <div class="skills__grid">
+
+        <div class="skill-card reveal">
+
+          <div class="skill-card__icon">⌨</div>
+          <h3 class="skill-card__title">Programming</h3>
+
+          <ul class="skill-card__list">
+
+            <li>
+              <span>JavaScript</span>
+              <div class="bar">
+                <div class="bar__fill" style="--level:75%"></div>
+              </div>
+            </li>
+
+            <li>
+              <span>Python</span>
+              <div class="bar">
+                <div class="bar__fill" style="--level:70%"></div>
+              </div>
+            </li>
+
+            <li>
+              <span>HTML / CSS</span>
+              <div class="bar">
+                <div class="bar__fill" style="--level:90%"></div>
+              </div>
+            </li>
+
+            <li>
+              <span>Java</span>
+              <div class="bar">
+                <div class="bar__fill" style="--level:60%"></div>
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="skill-card reveal">
+
+          <div class="skill-card__icon">⌕</div>
+          <h3 class="skill-card__title">Cybersecurity</h3>
+
+          <ul class="skill-card__list">
+
+            <li>
+              <span>Cybersecurity Fundamentals</span>
+              <div class="bar">
+                <div class="bar__fill" style="--level:65%"></div>
+              </div>
+            </li>
+
+            <li>
+              <span>Networking</span>
+              <div class="bar">
+                <div class="bar__fill" style="--level:60%"></div>
+              </div>
+            </li>
+
+            <li>
+              <span>Ethical Hacking</span>
+              <div class="bar">
+                <div class="bar__fill" style="--level:55%"></div>
+              </div>
+            </li>
+
+            <li>
+              <span>CTF / Security Labs</span>
+              <div class="bar">
+                <div class="bar__fill" style="--level:55%"></div>
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="skill-card reveal">
+
+          <div class="skill-card__icon">⚙</div>
+          <h3 class="skill-card__title">Development</h3>
+
+          <ul class="skill-card__list">
+
+            <li>
+              <span>Git / GitHub</span>
+              <div class="bar">
+                <div class="bar__fill" style="--level:80%"></div>
+              </div>
+            </li>
+
+            <li>
+              <span>React / Expo</span>
+              <div class="bar">
+                <div class="bar__fill" style="--level:75%"></div>
+              </div>
+            </li>
+
+            <li>
+              <span>APIs</span>
+              <div class="bar">
+                <div class="bar__fill" style="--level:65%"></div>
+              </div>
+            </li>
+
+            <li>
+              <span>Software Development</span>
+              <div class="bar">
+                <div class="bar__fill" style="--level:75%"></div>
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="section" id="projects">
+
+      <div class="section__header">
+        <span class="section__eyebrow">03 / PROJECTS</span>
+        <h2 class="section__title">Things I've built</h2>
+      </div>
+
+      <div class="projects__grid">
+
+        <article class="project-card reveal">
+
+          <div class="project-card__glow"></div>
+
+          <div class="project-card__top">
+            <span class="project-card__tag">Software</span>
+          </div>
+
+          <h3 class="project-card__title">VV App</h3>
+
+          <p class="project-card__desc">
+            A personal application built with React Native and Expo,
+            designed to bring together useful features in one modern mobile
+            experience.
+          </p>
+
+          <div class="project-card__stack">
+            <span>React Native</span>
+            <span>Expo</span>
+            <span>JavaScript</span>
+          </div>
+
+          <div class="project-card__links">
+            <a href="#" class="link-btn">GitHub →</a>
+            <a href="#" class="link-btn">View Project →</a>
+          </div>
+
+        </article>
+
+        <article class="project-card reveal">
+
+          <div class="project-card__glow"></div>
+
+          <div class="project-card__top">
+            <span class="project-card__tag">Web</span>
+          </div>
+
+          <h3 class="project-card__title">Personal Portfolio</h3>
+
+          <p class="project-card__desc">
+            A responsive personal portfolio designed and developed from
+            scratch using HTML, CSS and JavaScript with dark and light themes.
+          </p>
+
+          <div class="project-card__stack">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+          </div>
+
+          <div class="project-card__links">
+            <a href="#" class="link-btn">GitHub →</a>
+            <a href="#home" class="link-btn">Live Site →</a>
+          </div>
+
+        </article>
+
+        <article class="project-card reveal">
+
+          <div class="project-card__glow"></div>
+
+          <div class="project-card__top">
+            <span class="project-card__tag">Cybersecurity</span>
+          </div>
+
+          <h3 class="project-card__title">Cybersecurity Learning Lab</h3>
+
+          <p class="project-card__desc">
+            A collection of hands-on cybersecurity exercises focused on
+            understanding vulnerabilities, networking and defensive security.
+          </p>
+
+          <div class="project-card__stack">
+            <span>Networking</span>
+            <span>Linux</span>
+            <span>Security</span>
+          </div>
+
+          <div class="project-card__links">
+            <a href="#" class="link-btn">GitHub →</a>
+            <a href="#writeups" class="link-btn">Write-ups →</a>
+          </div>
+
+        </article>
+
+        <article class="project-card reveal">
+
+          <div class="project-card__glow"></div>
+
+          <div class="project-card__top">
+            <span class="project-card__tag">Development</span>
+          </div>
+
+          <h3 class="project-card__title">Personal Applications</h3>
+
+          <p class="project-card__desc">
+            A collection of smaller applications and experiments created to
+            learn new technologies and solve everyday problems.
+          </p>
+
+          <div class="project-card__stack">
+            <span>JavaScript</span>
+            <span>Python</span>
+            <span>APIs</span>
+          </div>
+
+          <div class="project-card__links">
+            <a href="#" class="link-btn">GitHub →</a>
+            <a href="#contact" class="link-btn">Contact Me →</a>
+          </div>
+
+        </article>
+
+      </div>
+
+    </section>
+
+    <section class="section section--alt" id="experience">
+
+      <div class="section__header">
+        <span class="section__eyebrow">04 / EXPERIENCE</span>
+        <h2 class="section__title">My journey so far</h2>
+      </div>
+
+      <div class="timeline">
+
+        <div class="timeline__item reveal">
+
+          <div class="timeline__dot"></div>
+
+          <div class="timeline__card">
+
+            <span class="timeline__date">2026 — Present</span>
+
+            <h3 class="timeline__title">
+              Year 12 Student
+            </h3>
+
+            <p class="timeline__desc">
+              Completing VCE with subjects including Software Development,
+              General Mathematics, Geography, English and Extended Investigation.
+            </p>
+
+          </div>
+
+        </div>
+
+        <div class="timeline__item reveal">
+
+          <div class="timeline__dot"></div>
+
+          <div class="timeline__card">
+
+            <span class="timeline__date">2026 — Present</span>
+
+            <h3 class="timeline__title">
+              Cybersecurity Development
+            </h3>
+
+            <p class="timeline__desc">
+              Building practical cybersecurity knowledge through independent
+              study, security projects, programming and hands-on experimentation.
+            </p>
+
+          </div>
+
+        </div>
+
+        <div class="timeline__item reveal">
+
+          <div class="timeline__dot"></div>
+
+          <div class="timeline__card">
+
+            <span class="timeline__date">2025 — Present</span>
+
+            <h3 class="timeline__title">
+              Software Development
+            </h3>
+
+            <p class="timeline__desc">
+              Developing personal applications and learning modern
+              development technologies including JavaScript, React Native,
+              Expo and Git.
+            </p>
+
+          </div>
+
+        </div>
+
+        <div class="timeline__item reveal">
+
+          <div class="timeline__dot"></div>
+
+          <div class="timeline__card">
+
+            <span class="timeline__date">Ongoing</span>
+
+            <h3 class="timeline__title">
+              Personal Projects
+            </h3>
+
+            <p class="timeline__desc">
+              Continuously experimenting with technology, cybersecurity and
+              software development through personal projects.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="section" id="certifications">
+
+      <div class="section__header">
+        <span class="section__eyebrow">05 / CERTIFICATIONS</span>
+        <h2 class="section__title">Learning & certifications</h2>
+      </div>
+
+      <div class="certs__grid">
+
+        <div class="cert-card reveal">
+
+          <div class="cert-card__badge">◈</div>
+
+          <h3 class="cert-card__title">
+            Google Cybersecurity Certificate
+          </h3>
+
+          <p class="cert-card__issuer">
+            Google / Coursera
+          </p>
+
+          <span class="cert-card__status">
+            Completed
+          </span>
+
+        </div>
+
+        <div class="cert-card reveal">
+
+          <div class="cert-card__badge">⌁</div>
+
+          <h3 class="cert-card__title">
+            Cisco Introduction to Cybersecurity
+          </h3>
+
+          <p class="cert-card__issuer">
+            Cisco Networking Academy
+          </p>
+
+          <span class="cert-card__status">
+            Completed
+          </span>
+
+        </div>
+
+        <div class="cert-card reveal">
+
+          <div class="cert-card__badge">+</div>
+
+          <h3 class="cert-card__title">
+            CompTIA Security+
+          </h3>
+
+          <p class="cert-card__issuer">
+            CompTIA
+          </p>
+
+          <span class="cert-card__status">
+            Future Goal
+          </span>
+
+        </div>
+
+        <div class="cert-card reveal">
+
+          <div class="cert-card__badge">☁</div>
+
+          <h3 class="cert-card__title">
+            AWS Cloud Practitioner
+          </h3>
+
+          <p class="cert-card__issuer">
+            Amazon Web Services
+          </p>
+
+          <span class="cert-card__status">
+            Future Goal
+          </span>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="section section--alt" id="writeups">
+
+      <div class="section__header">
+        <span class="section__eyebrow">06 / WRITE-UPS</span>
+        <h2 class="section__title">What I'm learning</h2>
+      </div>
+
+      <div class="writeups__grid">
+
+        <a href="#" class="writeup-card reveal">
+
+          <span class="writeup-card__type">
+            Cybersecurity
+          </span>
+
+          <h3 class="writeup-card__title">
+            Cybersecurity Learning Journey
+          </h3>
+
+          <p class="writeup-card__desc">
+            Notes, lessons and practical knowledge collected while learning
+            cybersecurity.
+          </p>
+
+          <span class="writeup-card__date">
+            Coming soon
+          </span>
+
+        </a>
+
+        <a href="#" class="writeup-card reveal">
+
+          <span class="writeup-card__type">
+            Development
+          </span>
+
+          <h3 class="writeup-card__title">
+            Building My First React Native App
+          </h3>
+
+          <p class="writeup-card__desc">
+            Lessons learned while developing, debugging and improving a
+            React Native application with Expo.
+          </p>
+
+          <span class="writeup-card__date">
+            Coming soon
+          </span>
+
+        </a>
+
+        <a href="#" class="writeup-card reveal">
+
+          <span class="writeup-card__type">
+            Research
+          </span>
+
+          <h3 class="writeup-card__title">
+            Social Media & Political Opinion
+          </h3>
+
+          <p class="writeup-card__desc">
+            Research exploring how social media exposure can influence the
+            perceptions and political opinions of young voters.
+          </p>
+
+          <span class="writeup-card__date">
+            Coming soon
+          </span>
+
+        </a>
+
+        <a href="#" class="writeup-card reveal">
+
+          <span class="writeup-card__type">
+            Technology
+          </span>
+
+          <h3 class="writeup-card__title">
+            Things I'm Learning
+          </h3>
+
+          <p class="writeup-card__desc">
+            A collection of notes and resources from my journey through
+            programming, cybersecurity and technology.
+          </p>
+
+          <span class="writeup-card__date">
+            Coming soon
+          </span>
+
+        </a>
+
+      </div>
+
+    </section>
+
+    <section class="section" id="contact">
+
+      <div class="section__header">
+        <span class="section__eyebrow">07 / CONTACT</span>
+        <h2 class="section__title">Let's connect</h2>
+      </div>
+
+      <div class="contact__grid">
+
+        <div class="contact__info reveal">
+
+          <p class="contact__intro">
+            Interested in cybersecurity, technology or working together?
+            Feel free to reach out.
+          </p>
+
+          <a href="mailto:viennalokie@example.com" class="contact__item">
+            <span class="contact__icon">✉</span>
+            <span>viennalokie@example.com</span>
+          </a>
+
+          <a href="https://github.com/vi-ennaz" target="_blank" rel="noopener" class="contact__item">
+            <span class="contact__icon">⌘</span>
+            <span>github.com/vi-ennaz</span>
+          </a>
+
+          <a href="https://www.linkedin.com/in/viennazaradinh/" target="_blank" rel="noopener" class="contact__item">
+            <span class="contact__icon">in</span>
+            <span>linkedin.com/in/viennazaradinh</span>
+          </a>
+
+          <a href="https://www.instagram.com/vi.ennaz/" target="_blank" rel="noopener" class="contact__item">
+            <span class="contact__icon">◎</span>
+            <span>@vi.ennaz</span>
+          </a>
+
+        </div>
+
+        <form class="contact__form reveal" id="contactForm">
+
+          <div class="form-group">
+
+            <label for="name">
+              Name
+            </label>
+
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              placeholder="Your name"
+            >
+
+          </div>
+
+          <div class="form-group">
+
+            <label for="email">
+              Email
+            </label>
+
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="you@example.com"
+            >
+
+          </div>
+
+          <div class="form-group">
+
+            <label for="message">
+              Message
+            </label>
+
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              required
+              placeholder="What's on your mind?"
+            ></textarea>
+
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--full">
+            Send Message
+          </button>
+
+          <p class="form-status" id="formStatus"></p>
+
+        </form>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="footer">
+
+    <div class="footer__inner">
+
+      <span>
+        © <span id="year"></span> Vienna Dinh
+      </span>
+
+      <div class="footer__socials">
+
+        <a href="https://github.com/vi-ennaz" target="_blank" rel="noopener">
+          GitHub
+        </a>
+
+        <a href="https://www.linkedin.com/in/viennazaradinh/" target="_blank" rel="noopener">
+          LinkedIn
+        </a>
+
+        <a href="https://www.instagram.com/vi.ennaz/" target="_blank" rel="noopener">
+          Instagram
+        </a>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
